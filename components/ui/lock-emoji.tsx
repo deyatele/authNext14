@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export const LockEmoji = ({ width = 72, height = 72 }) => {
+export const LockEmoji = ({ width = 60, height = 60 }) => {
   return (
     <Image
       src="https://cdn-0.emojis.wiki/emoji-pics-lf/apple/locked-with-key-apple.webp"

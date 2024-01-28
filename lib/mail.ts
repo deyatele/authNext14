@@ -4,7 +4,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const domain = process.env.NEXT_PUBLIC_APP_URL
 export const sendTwoFactorTokenEmail = async (email:string,token:string) => {
     await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "mail@auth-nextjs14.site",
         to: email,
         subject: "Двухфакторное подтверждение",
         html:`<p>Ваш код: ${token}</p>`

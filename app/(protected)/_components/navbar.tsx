@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation';
 export const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="bg-secondary flex justify-between items-center p-4 rounded-xl w-[600px] shadow-sm">
-      <div className="flex gap-x-2">
+    <nav className="bg-secondary mt-5 flex justify-end items-center p-4 rounded-xl sm:w-[600px] w-[360px] sm:justify-between shadow-sm">
+      <div className="hidden sm:flex sm:gap-x-2">
         <Button variant={pathname === '/server' ? 'default' : 'outline'} asChild>
           <Link href="/server">Сервер</Link>
         </Button>
